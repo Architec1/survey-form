@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Survey Form</title>
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<h1 id="title" class="text-center">Survey Form</h1>
+			<p id="description" class="description text-center">Thank you for taking the time</p>
+		</header>
+		<form id="survey-form">
+		
+			<fieldset>
+
+				<h2>About you</h2>
+
+				<div class="form-block">
+					<div class="form-group">
+						<label class="question" id="name-label" for="name">Name</label>
+						<input id="name" name="name" type="text" class="form-control" placeholder="Enter you name" required />
+					</div>
+
+					<div class="form-group">
+						<label class="question" id="email-label" for="email">Email</label>
+						<input id="email" name="email" type="email" class="form-control" placeholder="Enter you email" required />
+					</div>
+
+					<div class="form-group">
+						<label class="question" id="number-label" for="age">Age</label>
+						<input id="number" name="age" class="form-control"	type="number" min="18" max="99" placeholder="Enter you age" />
+					</div>
+
+					<div class="form-group">
+						<p>Gender</p>
+						<label><input type="radio" name="gender" value="male" class="input-radio" /><span>Male</span></label>
+						<label><input type="radio" name="gender" value="female" class="input-radio" /><span>Female</span></label>
+					</div>
+				</div>
+
+			</fieldset>
+
+			<fieldset>
+				<h2>You address</h2>
+
+				<div class="form-block">
+
+					<div class="form-group">
+						<label class="question" id="country-label" for="country">Country</label>
+						<input id="country" name="country" type="text" class="form-control" placeholder="Enter you country" required />
+					</div>
+
+					<div class="form-group">
+						<label class="question" id="city-label" for="city">City</label>
+						<input id="city" name="city" type="text" class="form-control" placeholder="Enter you city" required />
+					</div>
+
+					<div class="form-group">
+						<label class="question" id="street-label" for="street">Street</label>
+						<input id="street" name="street" type="text" class="form-control" placeholder="Enter you street" required />
+					</div>
+
+					<div class="form-group">
+						<label class="question" id="zip-label" for="zip">Zip code</label>
+						<input id="zip" name="zip" type="number" class="form-control" placeholder="Enter you zip code" required />
+					</div>	
+					
+				</div>
+
+			</fieldset>
+
+			<fieldset>
+				<h2>Questions</h2>
+
+				<div class="form-block">
+
+					<div class="form-group">
+						<p>What do you use the computer for?</p>
+						<select id="dropdown" name="use-computer" class="form-control"	required>
+							<option disabled selected value>Select option</option>
+							<option value="internet">Internet</option>
+							<option value="work">Work</option>
+							<option value="personal">Personal</option>
+							<option value="learning">Learning</option>
+							<option value="gaming">Gaming</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<p>Which among these web browsers you are aware of?</p>
+						<label><input type="checkbox" name="browsers" value="explorer" class="input-checkbox" />Internet Explorer</label>
+						<label><input type="checkbox" name="browsers" value="firefox" class="input-checkbox" />Mozila Firefox</label>
+						<label><input type="checkbox" name="browsers" value="chrome" class="input-checkbox" />Google Chrome</label>
+						<label><input type="checkbox" name="browsers" value="safari" class="input-checkbox" />Safari</label>
+						<label><input type="checkbox" name="browsers" value="other" class="input-checkbox" />Other</label>
+					</div>
+
+					<div class="form-group">
+						<p>Have you ever wanted to learn programming?</p>
+						<label><input type="radio" name="programming" value="yes" class="input-radio" />Yes, sure</label>
+						<label><input type="radio" name="programming" value="no" class="input-radio" />
+No, never</label>
+						<label><input type="radio" name="programming" value="difficult" class="input-radio" />I find it difficult to answer</label>
+					</div>
+
+					<div class="form-group">
+						<p>What would you like to study?</p>
+						<label><input type="checkbox" name="study" value="front-end" class="input-checkbox" />Front-end development</label>
+						<label><input type="checkbox" name="study" value="back-end" class="input-checkbox" />Back-end development</label>
+						<label><input type="checkbox" name="study" value="mobile" class="input-checkbox" />Mobile development</label>
+						<label><input type="checkbox" name="study" value="data-science" class="input-checkbox" />Data Science and Machine Learning</label>
+						<label><input type="checkbox" name="study" value="artificial-intelligence" class="input-checkbox" />Artificial Intelligence and Big Data</label>
+						<label><input type="checkbox" name="study" value="other" class="input-checkbox" />Other</label>
+					</div>
+					
+				</div>
+	
+			</fieldset>
+
+			<fieldset>
+				<h2>Your opinion</h2>
+
+				<div class="form-block">
+					
+					<div class="form-group">
+						<p>Share your feedback with us</p>
+
+						<table>
+							<tr>
+								<td></td>
+    							<td><p>Strongly agree</p></td>
+    							<td><p>Agree</p></td>
+    							<td><p>Neutral</p></td>
+    							<td><p>Disagree</p></td>
+    							<td><p>Strongly disagree</p></td>
+  							</tr>
+  							<tr>
+    							<td><p>This website is organized?</p></td>
+    							<td><label><input type="radio" name="website-is-organized" value="strongly-agree" class="input-radio" /></label></td>
+    							<td><label><input type="radio" name="website-is-organized" value="agree" class="input-radio" /></label></td>
+    							<td><label><input type="radio" name="website-is-organized" value="neutral" class="input-radio" /></label></td>
+    							<td><label><input type="radio" name="website-is-organized" value="disagree" class="input-radio" /></label></td>
+    							<td><label><input type="radio" name="website-is-organized" value="strongly-disagree" class="input-radio" /></label></td>
+  							</tr>
+  							<tr>
+    							<td><p>This website is easy to navigate</p></td>
+    							<td><label><input type="radio" name="easy-to-navigate" value="strongly-agree" class="input-radio" /></label></td>
+    							<td><label><input type="radio" name="easy-to-navigate" value="agree" class="input-radio" /></label></td>
+    							<td><label><input type="radio" name="easy-to-navigate" value="neutral" class="input-radio" /></label></td>
+    							<td><label><input type="radio" name="easy-to-navigate" value="disagree" class="input-radio" /></label></td>
+    							<td><label><input type="radio" name="easy-to-navigate" value="strongly-disagree" class="input-radio" /></label></td>
+  							</tr>
+  							<tr>
+    							<td><p>The information on this website is accurate?</p></td>
+    							<td><label><input type="radio" name="information-is-accurate" value="strongly-agree" class="input-radio" /></label></td>
+    							<td><label><input type="radio" name="information-is-accurate" value="agree" class="input-radio" /></label></td>
+    							<td><label><input type="radio" name="information-is-accurate" value="neutral" class="input-radio" /></label></td>
+    							<td><label><input type="radio" name="information-is-accurate" value="disagree" class="input-radio" /></label></td>
+    							<td><label><input type="radio" name="information-is-accurate" value="strongly-disagree" class="input-radio" /></label></td>
+  							</tr>
+  							<tr>
+    							<td><p>Content are appealing to me?</p></td>
+    							<td><label><input type="radio" name="content-are-appealing" value="strongly-agree" class="input-radio" /></label></td>
+    							<td><label><input type="radio" name="content-are-appealing" value="agree" class="input-radio" /></label></td>
+    							<td><label><input type="radio" name="content-are-appealing" value="neutral" class="input-radio" /></label></td>
+    							<td><label><input type="radio" name="content-are-appealing" value="disagree" class="input-radio" /></label></td>
+    							<td><label><input type="radio" name="content-are-appealing" value="strongly-disagree" class="input-radio" /></label></td>
+  							</tr>
+						</table>
+					</div>
+
+					<div class="form-group">
+						<p>How can we improve this website?</p>
+						<textarea id="comments" class="input-textarea" name="comments"></textarea>
+					</div>
+
+				</div>
+
+			</fieldset>
+
+			<div class="form-submit">
+				<button type="submit" id="submit" class="submit-button">Submit</button>
+			</div>
+
+		</form>
+	</div>
+</body>
+</html>
